@@ -22,7 +22,7 @@ class Majas extends Component {
             <p>
               Exquisite sophisticated iconic cutting-edge laborum deserunt Addis Ababa esse bureaux cupidatat id minim. Sharp classic the best commodo nostrud delightful. Conversation aute Rochester id. Qui sunt remarkable deserunt intricate airport handsome K-pop excepteur classic esse Asia-Pacific laboris.
             </p>
-            <img src={Centrs} alt="Article Detail" className="article-detail-image" />
+            <img src={Centrs} alt="Article Detail" className="article-detail-image"/>
           </div>
         </article>
       </div>

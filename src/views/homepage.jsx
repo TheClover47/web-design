@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
+import Ricards from '../assets/ricards.jpg';
 
 class HomePage extends Component {
 
@@ -27,11 +28,30 @@ class HomePage extends Component {
               <h3>Skola</h3>
               <p>Ceļš no skolas līdz Latvijas Universitātei</p>
             </div>
+            <div className="feature-card">
+              <h3>Skola</h3>
+              <p>Ceļš no skolas līdz Latvijas Universitātei</p>
+            </div>
+            <div className="feature-card">
+              <h3>Skola</h3>
+              <p>Ceļš no skolas līdz Latvijas Universitātei</p>
+            </div>
+            <div className="feature-card">
+              <h3>Skola</h3>
+              <p>Ceļš no skolas līdz Latvijas Universitātei</p>
+            </div>
+            <div className="feature-card">
+              <h3>Skola</h3>
+              <p>Ceļš no skolas līdz Latvijas Universitātei</p>
+            </div>
           </div>
         </section>
         <section className="about">
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <h2>Par mani</h2>
           <p>Esmu Ričards Āboliņš-Aizbalts, 3. gada datorzinātņu students Latvijas universitātē. Šī mājaslapa tika izveidota kursa "Tīmekļa dizaina pamati" ietvaros.</p>
+          </div>
+          <img src={Ricards} alt="Article" className="about-image" />
         </section>
       </>
     );
