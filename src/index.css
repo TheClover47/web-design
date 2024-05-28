@@ -1,75 +1,277 @@
+/* App.css */
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --dark-bg: #121212;
+  --light-bg: #FFFFFF;
+  --primary-color: #61DAFB;
+  --accent-color-1: #21A1F1;
+  --accent-color-2: #FF9800;
+  --text-dark: #FFFFFF;
+  --text-light: #000000;
+  --card-light-bg: #f3f3f3;
 }
 
 body {
+  transition: background-color 0.5s, color 0.5s;
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body.light-mode {
+  background-color: var(--light-bg);
+  color: var(--text-light);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--text-dark);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.header, .footer {
+  background-color: var(--dark-bg);
+  padding: 1rem;
 }
 
 .navbar {
   display: flex;
-  justify-content: center;
-  gap: 2em;
-  border-bottom: solid 1px darkslategray;
-  /* grid-template-columns: 1fr 1fr; */
-  padding: 0.5em;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.nav-link {
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5em;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: var(--accent-color-1);
+  color: var(--text-light);
+}
+
+.nav-link.active {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.navbar button {
+  background: none;
+  border: 1px solid var(--text-dark);
+  border-radius: 0.5em;
+  padding: 0.5rem 1rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar button i {
+  margin-right: 0.5rem;
+}
+
+.navbar button:hover {
+  background-color: var(--text-dark);
+  color: var(--dark-bg);
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: url('./assets/Latvijas_Universitāte.JPG') no-repeat center center/cover;
+  color: var(--text-dark);
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to your preference */
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color-1);
+}
+
+.features {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--section-bg);
+}
+
+.features h2 {
+  margin-bottom: 2rem;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.3s;
+  background-color: var(--card-bg);
+  color: var(--card-text);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: justify;
+  background-color: var(--section-bg);
+  color: var(--text-color);
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 570px;
+}
+
+.footer {
+  background-color: var(--dark-bg);
+  padding: 1rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.social-icons a {
+  color: var(--text-dark);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+body.light-mode .feature-card,
+body.light-mode .about {
+  --section-bg: #f4f4f4;
+  --card-bg: var(--card-light-bg);
+  --card-text: var(--text-light);
+  --text-color: var(--text-light);
+}
+
+body.dark-mode .feature-card,
+body.dark-mode .about {
+  --section-bg: #1f1f1f;
+  --card-bg: #333;
+  --card-text: var(--text-dark);
+  --text-color: var(--text-dark);
+}
+
+/* ArticlePage.css */
+
+.article-page {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.nav-links a {
+  color: var(--text-dark);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.mode-toggle {
+  background: none;
+  border: 1px solid var(--text-dark);
+  padding: 0.5rem 1rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.mode-toggle i {
+  margin-right: 0.5rem;
+}
+
+.mode-toggle:hover {
+  background-color: var(--text-dark);
+  color: var(--dark-bg);
+}
+
+.article-content {
+  padding: 2rem 0;
+}
+
+.article-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-content .subheading {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.article-content .article-image,
+.article-content .article-detail-image {
+  width: 100%;
+  height: 300px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure images maintain their aspect ratio and cover the container */
+  margin-bottom: 1.5rem;
+  border-radius: 0.9em; /* Keep the border-radius if needed */
+}
+
+.article-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
 }

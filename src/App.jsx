@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from 'react-router-dom';
+// import './App.css';
+import HomePage from './views/homepage';
+import Darbs from './views/darbs';
+import Majas from './views/majas';
+import Skola from './views/skola';
+import Header from './views/components/header';
+import Footer from './views/components/footer';
 
-function App() {
-  const [count, setCount] = useState(0)
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      darkMode: false,
+    };
+    this.toggleDarkMode = this.toggleDarkMode.bind(this);
+  }
 
-  return (
-    <>
-      <nav className='navbar'>
-        <a href="/cels" target="_blank">
-          Ceļš
-        </a>
-        <a href="/kolaza" target="_blank">
-          Kolāža
-        </a>
-      </nav>
-      <h1>Mans ceļš uz Latvijas Universitāti</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  componentDidMount() {
+    document.body.className = this.state.darkMode ? 'dark-mode' : 'light-mode';
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.darkMode !== this.state.darkMode) {
+      document.body.className = this.state.darkMode ? 'dark-mode' : 'light-mode';
+    }
+  }
+
+  toggleDarkMode() {
+    this.setState((prevState) => ({ darkMode: !prevState.darkMode }));
+  }
+
+  render() {
+    const {darkMode} = this.state;
+    return (
+      <Router>
+        <Header darkMode={darkMode} toggleDarkMode={this.toggleDarkMode}/>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/darbs" element={<Darbs/>} />
+          <Route path="/majas" element={<Majas/>} />
+          <Route path="/skola" element={<Skola/>}/>
+        </Routes>
+        <Footer/>
+    </Router>
+    );
+  }
 }
 
-export default App
+export default App;
