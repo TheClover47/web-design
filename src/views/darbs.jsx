@@ -7,7 +7,7 @@ class Darbs extends Component {
     return (
       <div className="article-page">
         <article className="article-content">
-          <h1>Ceļš no Darba līdz Latvijas Universitātei</h1>
+          <h2>Ceļš no Darba līdz Latvijas Universitātei</h2>
           <p className="subheading">
             Subheading that sets up context, shares more info about the author, or generally gets people psyched to keep reading
           </p>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
-import Ricards from '../assets/ricards.jpg';
 
 class HomePage extends Component {
 
@@ -11,48 +10,41 @@ class HomePage extends Component {
         <section className="hero">
           <h1>Mans ceļš uz Latvijas Universitāti</h1>
           <p>Vieta, kur aizsākās mana programmētāja karjera.</p>
-          <button className="cta-button">Izpētīt ceļu</button>
+          {/* <button className="cta-button">Izpētīt ceļu</button> */}
         </section>
-        <section className="features">
-          <h2>Sadaļas</h2>
+        {/* <section className="features">
+          <h2>Mājaslapas sadaļas</h2>
           <div className="feature-cards">
-            <div className="feature-card">
-              <h3>Darbs</h3>
-              <p>Ceļš no darba līdz Latvijas Universitātei</p>
-            </div>
-            <div className="feature-card">
+            <Link to="/par-mani" className="feature-card">
+              <h3>Par Mani</h3>
+              <p>Īsa autobiogrāfija par mani</p>
+            </Link>
+            <Link to="/majas" className="feature-card">
               <h3>Mājas</h3>
               <p>Ceļš no mājām līdz Latvijas Universitātei</p>
-            </div>
-            <div className="feature-card">
+            </Link>
+            <Link to="/skola" className="feature-card">
               <h3>Skola</h3>
               <p>Ceļš no skolas līdz Latvijas Universitātei</p>
-            </div>
-            <div className="feature-card">
-              <h3>Skola</h3>
-              <p>Ceļš no skolas līdz Latvijas Universitātei</p>
-            </div>
-            <div className="feature-card">
-              <h3>Skola</h3>
-              <p>Ceļš no skolas līdz Latvijas Universitātei</p>
-            </div>
-            <div className="feature-card">
-              <h3>Skola</h3>
-              <p>Ceļš no skolas līdz Latvijas Universitātei</p>
-            </div>
-            <div className="feature-card">
-              <h3>Skola</h3>
-              <p>Ceļš no skolas līdz Latvijas Universitātei</p>
-            </div>
+            </Link>
+            <Link to="/darbs" className="feature-card">
+              <h3>Darbs</h3>
+              <p>Ceļš no darba līdz Latvijas Universitātei</p>
+            </Link>
+            <Link className="feature-card">
+              <h3>Programmēšana</h3>
+              <p>Apraksts par manu programmēšanas ceļu</p>
+            </Link>
+            <Link className="feature-card">
+              <h3>Drīzumā</h3>
+              <p>Vēlviena apakšnodaļa par ceļu uz LU</p>
+            </Link>
+            <Link className="feature-card">
+              <h3>Drīzumā</h3>
+              <p>Vēlviena apakšnodaļa par ceļu uz LU</p>
+            </Link>
           </div>
-        </section>
-        <section className="about">
-          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-          <h2>Par mani</h2>
-          <p>Esmu Ričards Āboliņš-Aizbalts, 3. gada datorzinātņu students Latvijas universitātē. Šī mājaslapa tika izveidota kursa "Tīmekļa dizaina pamati" ietvaros.</p>
-          </div>
-          <img src={Ricards} alt="Article" className="about-image" />
-        </section>
+        </section> */}
       </>
     );
   }

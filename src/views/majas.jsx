@@ -7,20 +7,17 @@ class Majas extends Component {
     return (
       <div className="article-page">
         <article className="article-content">
-          <h1>Ceļš no Mājām līdz Latvijas Universitātei</h1>
+          <h2>Ceļš no Mājām līdz Latvijas Universitātei</h2>
           <p className="subheading">
-            Subheading that sets up context, shares more info about the author, or generally gets people psyched to keep reading
+            Apraksts kā es ikdienā tieku no savām mājām līdz Latvijas Universitātei.
           </p>
           <img src={Ulbroka} alt="Article" className="article-image" />
           <div className="article-body">
             <p>
-              Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look:
+            99% procentos gadījumu es uz universitāti braucu ar sabiedrisko transportu, pārējos gadījumos kāds mani aizved ar mašīnu. Blakus manām mājām ir Ulbrokas ielas pietura. No šīs pieturas attiet tikai autobusi. Lai nokļūtu uz centru es ikdienā braucu vai nu ar 51. vai 52. autobusu.
             </p>
             <p>
-              Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation exquisite perfect nostrud nisi intricate Content. Qui international first-class nulla ut. Punctual adipisicing, essential lovely queen tempor eiusmod iure. Exclusive Izakaya charming Scandinavian impeccable aute quality of life soft power pariatur Melbourne occaecat discerning. Qu wardrobe aliquid, et Porter destination Toto remarkable officia Helsinki excepteur Basset hound. Zürich sleepy perfect consectetur.
-            </p>
-            <p>
-              Exquisite sophisticated iconic cutting-edge laborum deserunt Addis Ababa esse bureaux cupidatat id minim. Sharp classic the best commodo nostrud delightful. Conversation aute Rochester id. Qui sunt remarkable deserunt intricate airport handsome K-pop excepteur classic esse Asia-Pacific laboris.
+              Braucot pa ceļam var redzēt dažādus apskates objektus. Blakus Ulbrokas ielas pieturai ir tautā sauktā "Ušakova kepka", kas ir kalns, kur cilvēki atpūšas, ved staigāt suņus un ziemā priecājas ar ziemas priekiem. Pāri ielai no kalna ir tirdzniecības centrs Augusts, kurā atrodas sporta zāle, pļavnieku tirgus, apģērbu veikali, kafejnīcas un citi veikali. Agrāk tajā ēkā bija t/c "Prisma", taču tas jau vairākus gadus ir izbeidzis savu darbību Latvijā.
             </p>
             <img src={Centrs} alt="Article Detail" className="article-detail-image"/>
           </div>

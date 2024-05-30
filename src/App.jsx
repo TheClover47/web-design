@@ -11,6 +11,7 @@ import Majas from './views/majas';
 import Skola from './views/skola';
 import Header from './views/components/header';
 import Footer from './views/components/footer';
+import AboutMe from './views/aboutme';
 
 class App extends Component {
   constructor(props) {
@@ -39,14 +40,19 @@ class App extends Component {
     const {darkMode} = this.state;
     return (
       <Router>
+        <div className='appContainer'>
         <Header darkMode={darkMode} toggleDarkMode={this.toggleDarkMode}/>
-        <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path="/darbs" element={<Darbs/>} />
-          <Route path="/majas" element={<Majas/>} />
-          <Route path="/skola" element={<Skola/>}/>
-        </Routes>
+        <div className='content'>
+          <Routes>
+            <Route path="/" element={<HomePage/>} />
+            <Route path="/par-mani" element={<AboutMe/>} />
+            <Route path="/darbs" element={<Darbs/>} />
+            <Route path="/majas" element={<Majas/>} />
+            <Route path="/skola" element={<Skola/>}/>
+          </Routes>
+        </div>
         <Footer/>
+        </div>
     </Router>
     );
   }

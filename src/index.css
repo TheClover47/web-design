@@ -7,6 +7,8 @@
   --primary-color: #FF4500;
   --text-dark: #FFFFFF;
   --text-light: #000000;
+  --light-subheading: #595959;
+  --dark-subheading: #A1A1A1;
 }
 
 body {
@@ -20,9 +22,28 @@ body.light-mode {
   color: var(--text-light);
 }
 
+body.light-mode .article-content .subheading {
+  color: var(--light-subheading);
+}
+
 body.dark-mode {
   background-color: var(--dark-bg);
   color: var(--text-dark);
+}
+
+body.dark-mode .article-content .subheading {
+  color: var(--dark-subheading);
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  /* height: 100%; */
 }
 
 .header, .footer {
@@ -49,11 +70,12 @@ body.dark-mode {
 
 .nav-link:hover {
   background-color: var(--primary-color);
-  color: var(--text-dark);
+  color: var(--text-light);
 }
 
 .nav-link.active {
   background-color: var(--primary-color);
+  color: var(--text-light);
 }
 
 .navbar button {
@@ -79,7 +101,8 @@ body.dark-mode {
 
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
+  height: 100%;
   background: url('./assets/Latvijas_Universitāte.JPG') no-repeat center center/cover;
   color: var(--text-dark);
   position: relative;
@@ -106,7 +129,7 @@ body.dark-mode {
 }
 
 .hero p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
 }
 
@@ -134,13 +157,10 @@ body.dark-mode {
   background-color: var(--section-bg);
 }
 
-.features h2 {
-  margin-bottom: 2rem;
-}
-
 .feature-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  justify-content: center;
   gap: 20px; /* Adjust the gap between cards */
 }
 
@@ -152,6 +172,7 @@ body.dark-mode {
   transition: transform 0.3s;
   background-color: var(--card-bg);
   color: var(--card-text);
+  text-decoration: none;
 }
 
 .feature-card:hover {
@@ -159,23 +180,24 @@ body.dark-mode {
 }
 
 .about {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  gap: 5em;
+  gap: 2em;
   padding: 2rem;
-  text-align: justify;
   background-color: var(--section-bg);
   color: var(--text-color);
+  height: 80.4vh;
 }
 
-.about h2 {
-  margin-bottom: 1rem;
+h2 {
+  font-size: 2rem;
 }
 
 .about p {
   max-width: 570px;
+  text-align: left;
 }
 
 .footer {
@@ -210,9 +232,9 @@ body.dark-mode .about {
 /* ArticlePage.css */
 
 .article-page {
-  max-width: 65%;
+  max-width: 50%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0.7em;
 }
 
 .site-name {
@@ -251,14 +273,9 @@ body.dark-mode .about {
   padding: 2rem 0;
 }
 
-.article-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .article-content .subheading {
   font-size: 1.25rem;
-  color: #666;
+  color: #A1A1A1;
   margin-bottom: 2rem;
 }
 
@@ -278,8 +295,8 @@ body.dark-mode .about {
 }
 
 .article-body p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
-  text-align: justify;
+  text-align: left;
 }
