@@ -10,8 +10,8 @@ export class skola extends Component {
           <p className="subheading">
             Apraksts kā es no mācībām vidusskolā tiku līdz Latvijas Universitātei.
           </p>
-          <img src={RCHV} alt="Article" className="article-image" />
           <div className="article-body">
+            <img src={RCHV} alt="Article" className="article-image" />
             <p>
               Jau kopš pirmās klases, 2009. gada septembra, es mācījos Rīgas Centra Humanitārajā Vidusskolā. Pirmie 9 gadi bija veltīti pamatizglītībai, taču pēdējie 3 vidusskolas gadi jau bija ar domu, lai tiktu tālāk uz kādu augstāku izglītības iestādi.
             </p>

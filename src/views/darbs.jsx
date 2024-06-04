@@ -11,10 +11,9 @@ class Darbs extends Component {
           <p className="subheading">
             Subheading that sets up context, shares more info about the author, or generally gets people psyched to keep reading
           </p>
-          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2em'}}>
-          <img src={Zageris} alt="Article" className="article-image" />
+          <div>
           <div className="article-body">
-            <h2>Rankas ielas pietura</h2>
+            <img src={Zageris} alt="Article" className="article-image"/>
             <p>
               Tieši blakus manai darbavietai ir Rankas ielas pietura.
             </p>
@@ -27,6 +26,7 @@ class Darbs extends Component {
           </div>
           <div className="article-body">
             <h2>Ofiss bez Chandra</h2>
+            <img src={Ofiss} alt="Article Detail" className="article-image" />
             <p>
               Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look:
             </p>
@@ -37,7 +37,6 @@ class Darbs extends Component {
               Exquisite sophisticated iconic cutting-edge laborum deserunt Addis Ababa esse bureaux cupidatat id minim. Sharp classic the best commodo nostrud delightful. Conversation aute Rochester id. Qui sunt remarkable deserunt intricate airport handsome K-pop excepteur classic esse Asia-Pacific laboris.
             </p>
           </div>
-          <img src={Ofiss} alt="Article Detail" className="article-image" />
           </div>
         </article>
       </div>
