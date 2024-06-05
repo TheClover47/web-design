@@ -10,8 +10,9 @@ export class aboutme extends Component {
           <img src={Ricards} alt="Article" className="about-image" />
           <div className="article-body">
             <p>Esmu <b>Ričards Āboliņš-Aizbalts</b>, 3. gada datorzinātņu students <b>Latvijas universitātē</b>. Šī mājaslapa tika izveidota kursa "Tīmekļa dizaina pamati" ietvaros.</p>
-            <p>Dzimu 2002. gada 26. jūlijā, tātad šobrīd esmu 21 gadu vecs. Piedzimu un uzaugu Rīgā, un jau no bērnības vasaras laikā lielākoties uzturos Saulkrastos, ģimenes vasarnīcā.</p>
-            <p>Bērnībā nodarbojos ar dažādiem sporta veidiem: basketbolu, peldēšanu, airēšanu. Basketbolā gāju ļoti īsu brīdi, jo sirds problēmu dēļ nevarēju turpināt piedalīties. Periodiski gāju arī peldēšanā, kopumā kādus 4 gadus. Tur iemācījos ļoti labi peldēt visādos stilos, taču nekādās sacensībās neesmu piedalījies. Vienu vasaru trēnējos arī airēšanā. Tur trēnējos līdz tiku līdz airēšanai ar iesācēju laivām "pīlītēm", un tad īsi pēc tam pazuda interese.</p>
+            <p>Dzimu <b>2002. gada 26. jūlijā</b>, tātad šobrīd esmu 21 gadu vecs. Piedzimu un uzaugu <b>Rīgā</b>, un jau no bērnības vasaras laikā lielākoties uzturos <b>Saulkrastos</b>, ģimenes vasarnīcā.</p>
+            <p>Bērnībā nodarbojos ar dažādiem sporta veidiem: basketbolu, peldēšanu, airēšanu. <b>Basketbolā</b> gāju ļoti īsu brīdi pirmās klases sākumā. Sirds problēmu dēļ man neatļāva turpināt piedalīties nodarbībās. Vairākus gadus vēlāk, izejot vairākus testus, tika secināts ka manai sirdij ir viss kārtībā, un ka tomēr es varu piedalīties sporta aktivitātēs ar lielu slodzi. Periodiski gāju arī <b>peldēšanā</b>, kopumā kādus 4 gadus. Tur iemācījos ļoti labi peldēt visādos stilos, taču nekādās sacensībās neesmu piedalījies. Vienu vasaru trēnējos arī <b>airēšanā</b>. Tur trēnējos līdz tiku līdz airēšanai ar iesācēju laivām "pīlītēm", un tad īsi pēc tam pazuda interese.</p>
+            <p>Brīvo laiku pavadu klausoties mūziku, spēlējot video spēles un programmējot paša veidotos projektus. Mans mīļākais mūzikas žanrs ir <b>hiphops</b>, mīļākā video spēle ir <b>Counter-Strike: Global Offesnive</b> un programmējot pārsvarā izstrādāju <b>tīmekļa lietotnes</b>.</p>
           </div>
         </article>
       </div>

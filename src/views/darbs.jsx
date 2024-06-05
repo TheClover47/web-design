@@ -9,11 +9,11 @@ class Darbs extends Component {
         <article className="article-content">
           <h2>Ceļš no Darba līdz Latvijas Universitātei</h2>
           <p className="subheading">
-            Subheading that sets up context, shares more info about the author, or generally gets people psyched to keep reading
+          Apraksts kā es ikdienā tieku no savas darba vietas līdz Latvijas Universitātei.
           </p>
           <div>
           <div className="article-body">
-            <img src={Zageris} alt="Article" className="article-image"/>
+            <img src={Ofiss} alt="Article" className="article-image"/>
             <p>
               Tieši blakus manai darbavietai ir Rankas ielas pietura.
             </p>
@@ -25,8 +25,8 @@ class Darbs extends Component {
             </p>
           </div>
           <div className="article-body">
-            <h2>Ofiss bez Chandra</h2>
-            <img src={Ofiss} alt="Article Detail" className="article-image" />
+            {/* <h2>Ofiss bez Chandra</h2> */}
+            <img src={Zageris} alt="Article Detail" className="article-image" />
             <p>
               Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look:
             </p>
