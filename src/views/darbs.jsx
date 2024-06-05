@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Zageris from '../assets/zageris.jpg'
 import Ofiss from '../assets/ofiss.jpg';
 
 class Darbs extends Component {
@@ -14,28 +13,14 @@ class Darbs extends Component {
           <div>
           <div className="article-body">
             <img src={Ofiss} alt="Article" className="article-image"/>
-            <p>
-              Tieši blakus manai darbavietai ir Rankas ielas pietura.
-            </p>
-            <p>
-              Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation exquisite perfect nostrud nisi intricate Content. Qui international first-class nulla ut. Punctual adipisicing, essential lovely queen tempor eiusmod iure. Exclusive Izakaya charming Scandinavian impeccable aute quality of life soft power pariatur Melbourne occaecat discerning. Qu wardrobe aliquid, et Porter destination Toto remarkable officia Helsinki excepteur Basset hound. Zürich sleepy perfect consectetur.
-            </p>
-            <p>
-              Exquisite sophisticated iconic cutting-edge laborum deserunt Addis Ababa esse bureaux cupidatat id minim. Sharp classic the best commodo nostrud delightful. Conversation aute Rochester id. Qui sunt remarkable deserunt intricate airport handsome K-pop excepteur classic esse Asia-Pacific laboris.
-            </p>
+            <p>Kopš 2023. gada oktobra, strādāju "Datu Tehnoloģiju Grupā" jeb DTG. Tas ir uzņēmums, kas piedāvā dažādus programmēšanas risinājums dažādiem klientiem. Lielākie un pazīstamākie klienti ir McDonalds, Bite, Pasažieru Vilciens, Sadales Tīkli, Arēna Rīga. </p>
+            <p>2023. gada rudens semestrī man bija nepieciešams iziet 3 mēnešu praksi kādā uzņēmumā. Caur paziņām dabuju kontaktu ar uzņēmuma vadītāju un sarunāju interviju uz programmētāja praksi. Paveicās ka šajā darba vietā galvenais fokuss programmētājiem bija tieši uz tīmekļa lietotņu izstrādi, kas tobrīd tieši mani interesēja. Intervija bija samērā viegla, jo nebija jāveic kāds zināšanu pārbaudes tests, kā tas ir pieņemts lielākajā daļā uzņēmumu.</p>
+            <p>Izejot praksi, uzņēmuma pārstāvji vēlējās, lai turpinu strādāt pie viņiem patstāvīgi, kam es labprāt piekritu. Tagad jau 5 mēnēšus oficiāli strādāju DTG, un esmu ļoti priecīgs par iegūto darba vietu. Labi kolēģi, nozares zināšanu attīstīšana, darba pieredze, kopumā laba atmosfēra.</p>
           </div>
           <div className="article-body">
-            {/* <h2>Ofiss bez Chandra</h2> */}
-            <img src={Zageris} alt="Article Detail" className="article-image" />
-            <p>
-              Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look:
-            </p>
-            <p>
-              Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation exquisite perfect nostrud nisi intricate Content. Qui international first-class nulla ut. Punctual adipisicing, essential lovely queen tempor eiusmod iure. Exclusive Izakaya charming Scandinavian impeccable aute quality of life soft power pariatur Melbourne occaecat discerning. Qu wardrobe aliquid, et Porter destination Toto remarkable officia Helsinki excepteur Basset hound. Zürich sleepy perfect consectetur.
-            </p>
-            <p>
-              Exquisite sophisticated iconic cutting-edge laborum deserunt Addis Ababa esse bureaux cupidatat id minim. Sharp classic the best commodo nostrud delightful. Conversation aute Rochester id. Qui sunt remarkable deserunt intricate airport handsome K-pop excepteur classic esse Asia-Pacific laboris.
-            </p>
+            <p>Tieši blakus manai darbavietai ir Rankas ielas pietura uz kuru es vienmēr eju, lai dotos uz mājām vai universitāti. No šīs pieturas var braukt ar 2. autobusu vai 15. trolējbusu, kas brauc no trolejbusu parka ganību dambī. Papildus opcija ir braukt ar 5. tramvaju, kuram arī pieturu sauc Rankas iela.</p>
+            <p>Braucot pa Pulkveža Brieža ielu, var redzēt Jaunās Hanzas peronu, kā arī blakus tam ir Pillar ēka, kas arī ir DTG klienti. Braucot uz centra pusi, paceļam var redzēt Kronvalda parku, kā arī tieši blakus tam ir kongresu nams.</p>
+            <p>Visbeidzot nogriežoties uz Raiņa Bulvāri, var redzēt Bastējkalna parku, Brīvības pieminekli un tad jau esam klāt pie Latvijas Universitātes.</p>
           </div>
           </div>
         </article>

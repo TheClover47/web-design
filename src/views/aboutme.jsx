@@ -7,7 +7,7 @@ export class aboutme extends Component {
       <div className="article-page">
         <article className="article-content">
           <h2>Par mani</h2>
-          <img src={Ricards} alt="Article" className="about-image" />
+          <img src={Ricards} alt="Ričards Āboliņš-Aizbalts" className="about-image" />
           <div className="article-body">
             <p>Esmu <b>Ričards Āboliņš-Aizbalts</b>, 3. gada datorzinātņu students <b>Latvijas universitātē</b>. Šī mājaslapa tika izveidota kursa "Tīmekļa dizaina pamati" ietvaros.</p>
             <p>Dzimu <b>2002. gada 26. jūlijā</b>, tātad šobrīd esmu 21 gadu vecs. Piedzimu un uzaugu <b>Rīgā</b>, un jau no bērnības vasaras laikā lielākoties uzturos <b>Saulkrastos</b>, ģimenes vasarnīcā.</p>

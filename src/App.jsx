@@ -37,23 +37,23 @@ class App extends Component {
   }
 
   render() {
-    const {darkMode} = this.state;
+    const { darkMode } = this.state;
     return (
       <Router>
         <div className='appContainer'>
-        <Header darkMode={darkMode} toggleDarkMode={this.toggleDarkMode}/>
-        <div className='content'>
-          <Routes>
-            <Route path="/" element={<HomePage/>} />
-            <Route path="/par-mani" element={<AboutMe/>} />
-            <Route path="/darbs" element={<Darbs/>} />
-            <Route path="/majas" element={<Majas/>} />
-            <Route path="/skola" element={<Skola/>}/>
-          </Routes>
+          <Header darkMode={darkMode} toggleDarkMode={this.toggleDarkMode} />
+          <div className={`content ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+            <Routes>
+              <Route path="/" element={<HomePage darkMode={darkMode} />} />
+              <Route path="/par-mani" element={<AboutMe darkMode={darkMode} />} />
+              <Route path="/darbs" element={<Darbs darkMode={darkMode} />} />
+              <Route path="/majas" element={<Majas darkMode={darkMode} />} />
+              <Route path="/skola" element={<Skola darkMode={darkMode} />} />
+            </Routes>
+          </div>
+          <Footer darkMode={darkMode} />
         </div>
-        <Footer/>
-        </div>
-    </Router>
+      </Router>
     );
   }
 }
