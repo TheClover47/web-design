@@ -68,7 +68,7 @@ Error generating stack: `+i.message+`
             {
               "@context": "https://schema.org",
               "@type": "ProfilePage",
-              "about": {
+              "mainEntity": {
                 "@type": "Person",
                 "name": "Ričards Āboliņš-Aizbalts",
                 "url": "https://theclover47.github.io/web-design/par-mani",
