@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Ricards from '../assets/ricards.jpg';
 
-export class aboutme extends Component {
+export class AboutMe extends Component {
   render() {
     return (
       <div className="article-page">
@@ -15,6 +15,32 @@ export class aboutme extends Component {
             <p>Brīvo laiku pavadu klausoties mūziku, spēlējot video spēles un programmējot paša veidotos projektus. Mans mīļākais mūzikas žanrs ir <b>hiphops</b>, mīļākā video spēle ir <b>Counter-Strike: Global Offesnive</b> un programmējot pārsvarā izstrādāju <b>tīmekļa lietotnes</b>.</p>
           </div>
         </article>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "ProfilePage",
+              "about": {
+                "@type": "Person",
+                "name": "Ričards Āboliņš-Aizbalts",
+                "url": "https://theclover47.github.io/web-design/par-mani",
+                "image": "https://theclover47.github.io/web-design/assets/ricards.jpg",
+                "birthDate": "2002-07-26",
+                "email": "rabolinss@gmail.com",
+                "jobTitle": "Full-stack Developer",
+                "worksFor": {
+                  "@type": "Organization",
+                  "name": "Datu Tehnoloģiju Grupa",
+                  "url": "https://dtg.lv/"
+                },
+                "sameAs": [
+                  "https://www.linkedin.com/in/ri%C4%8Dards-%C4%81boli%C5%86%C5%A1-aizbalts-214814280/",
+                  "https://github.com/TheClover47"
+                ]
+              }
+            }
+          `}
+        </script>
       </div>
     );
   }

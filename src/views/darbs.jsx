@@ -12,7 +12,7 @@ class Darbs extends Component {
           </p>
           <div>
           <div className="article-body">
-            <img src={Ofiss} alt="Article" className="article-image"/>
+            <img src={Ofiss} alt="DTG Ofiss" className="article-image"/>
             <p>Kopš 2023. gada oktobra, strādāju "Datu Tehnoloģiju Grupā" jeb DTG. Tas ir uzņēmums, kas piedāvā dažādus programmēšanas risinājums dažādiem klientiem. Lielākie un pazīstamākie klienti ir McDonalds, Bite, Pasažieru Vilciens, Sadales Tīkli, Arēna Rīga. </p>
             <p>2023. gada rudens semestrī man bija nepieciešams iziet 3 mēnešu praksi kādā uzņēmumā. Caur paziņām dabuju kontaktu ar uzņēmuma vadītāju un sarunāju interviju uz programmētāja praksi. Paveicās ka šajā darba vietā galvenais fokuss programmētājiem bija tieši uz tīmekļa lietotņu izstrādi, kas tobrīd tieši mani interesēja. Intervija bija samērā viegla, jo nebija jāveic kāds zināšanu pārbaudes tests, kā tas ir pieņemts lielākajā daļā uzņēmumu.</p>
             <p>Izejot praksi, uzņēmuma pārstāvji vēlējās, lai turpinu strādāt pie viņiem patstāvīgi, kam es labprāt piekritu. Tagad jau 5 mēnēšus oficiāli strādāju DTG, un esmu ļoti priecīgs par iegūto darba vietu. Labi kolēģi, nozares zināšanu attīstīšana, darba pieredze, kopumā laba atmosfēra.</p>

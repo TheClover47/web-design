@@ -39,7 +39,7 @@ class App extends Component {
   render() {
     const { darkMode } = this.state;
     return (
-      <Router>
+      <Router basename='/web-design'>
         <div className='appContainer'>
           <Header darkMode={darkMode} toggleDarkMode={this.toggleDarkMode} />
           <div className={`content ${darkMode ? 'dark-mode' : 'light-mode'}`}>
