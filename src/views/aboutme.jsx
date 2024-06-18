@@ -46,4 +46,4 @@ export class AboutMe extends Component {
   }
 }
 
-export default aboutme;
+export default AboutMe;
